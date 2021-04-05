@@ -38,6 +38,7 @@
 }
 
 .postText {
+  word-wrap: break-word;
   white-space: pre-wrap;
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
