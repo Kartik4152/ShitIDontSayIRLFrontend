@@ -7,7 +7,7 @@ const CreatePost=(props)=>{
     const sendRant = async ()=>{
         if(rant.length&&rant.length<=maxLength)
         {
-            const res=await fetch('http://localhost:5000',{
+            const res=await fetch('https://shitidontsayirl.herokuapp.com/',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

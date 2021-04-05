@@ -5,7 +5,7 @@ import './Posts.css';
 const Posts=(props)=>{
     const [posts,setPosts]=useState([]);
     useEffect(async()=>{
-        const res=await fetch('http://localhost:5000',{method:'GET'});
+        const res=await fetch('https://shitidontsayirl.herokuapp.com/',{method:'GET'});
         let p=await res.json();
         p.reverse();
         setPosts(p);
