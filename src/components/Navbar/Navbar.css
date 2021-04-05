@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  background-color: var(--background);
+  width: 100vw;
+  height: 4em;
+  border-bottom: 2px solid var(--foreground);
+  justify-content: center;
+  align-items: center;
+}
+
+#headTxt {
+  color: var(--foreground);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em;
+}

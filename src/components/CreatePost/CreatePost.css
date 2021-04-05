@@ -1,0 +1,46 @@
+.createContainer {
+  padding: 2em;
+  gap: 1em;
+  background-color: var(--background);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#postBtn {
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  border: 2px solid var(--foreground);
+  border-radius: 2em;
+  font-family: "Quicksand", sans-serif;
+  cursor: default;
+}
+#postBtn:hover {
+  background: var(--foreground);
+  border-color: white;
+}
+
+#rant {
+  min-height: 100px;
+  min-width: 100px;
+  padding: 1em;
+  border: 2px solid var(--foreground);
+  background: none;
+  color: white;
+  border-radius: 1em;
+}
+#rant:focus {
+  border: 2px solid var(--foreground);
+  outline: none;
+}
+
+#wordCNT {
+  font-size: 0.7rem;
+  color: rgba(240, 240, 240, 0.5);
+  position: relative;
+  top: -2em;
+  text-align: right;
+  right: 1em;
+}
