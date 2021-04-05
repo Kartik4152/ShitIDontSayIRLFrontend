@@ -26,19 +26,20 @@ const CreatePost=(props)=>{
         }
     }
     useEffect(()=>{
+        const ref=textAreaRef.current;
         const addTab=(e)=>{
         if(e.key==='Tab'&&rant.length<420)
             {
                 e.preventDefault();
-                let start=textAreaRef.current.selectionStart;
-                let end=textAreaRef.current.selectionEnd;
+                let start=ref.selectionStart;
+                let end=ref.selectionEnd;
                 setRant(rant.substring(0,start)+'\t'+rant.substring(end));
-                textAreaRef.current.selectionStart=textAreaRef.current.selectionEnd=start+1;
+                ref.selectionStart=ref.selectionEnd=start+1;
             }
         }
-        textAreaRef.current.addEventListener('keydown',addTab);
+        ref.addEventListener('keydown',addTab);
         return ()=>{
-            textAreaRef.current.removeEventListener('keydown',addTab);
+            ref.removeEventListener('keydown',addTab);
         }
     })
     return(
