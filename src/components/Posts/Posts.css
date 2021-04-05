@@ -16,7 +16,8 @@
   flex-direction: column;
   gap: 5em;
   box-shadow: -1px 1px var(--foreground), -2px 2px var(--foreground),
-    -3px 3px var(--foreground), -4px 4px #77aaff, -5px 5px var(--foreground);
+    -3px 3px var(--foreground), -4px 4px var(--foreground),
+    -5px 5px var(--foreground);
 }
 .postItem:hover {
   animation-name: wiggle;
