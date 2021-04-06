@@ -1,7 +1,6 @@
 .postsContainer {
   width: 100vw;
   padding: 0 5vw 5vw 5vw;
-  min-height: 100vh;
   background-color: var(--background);
 }
 
