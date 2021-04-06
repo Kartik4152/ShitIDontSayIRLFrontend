@@ -7,8 +7,12 @@ const Posts=(props)=>{
     useEffect(()=>{
         fetch('https://shitidontsayirl.herokuapp.com/',{method:'GET'})
         .then(res=>res.json())
-        .then(resJson=>setPosts(resJson.slice().reverse()));
-    },[props.rerender])
+        .then(resJson=>{
+            setPosts(resJson.slice().reverse())
+            // document.querySelector('#lc').style.top="-150vh";
+            document.querySelector('#lc').style.clipPath="circle(0% at 0% 0%)";
+        });
+    },[props])
     return(
         <div className='postsContainer'>
         <ResponsiveMasonry columnsCountBreakPoints={{250: 1, 500: 2, 750: 3,1000:4}}>
